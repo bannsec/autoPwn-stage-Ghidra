@@ -10,7 +10,7 @@ RUN mkdir -p /opt && cd /opt && \
 
 # Specific layer for Java
 RUN cd /opt && \
-    OPENJDK_URL=`wget -O- --quiet http://jdk.java.net/11/ | grep -oie 'https://.*linux.\+.tar.gz' | head -1` && \
+    OPENJDK_URL=`wget -O- --quiet http://jdk.java.net/12/ | grep -oie 'https://.*linux.\+.tar.gz' | head -1` && \
     wget -O openjdk.tar.gz $OPENJDK_URL && tar xf openjdk.tar.gz && rm openjdk.tar.gz
 
 # Bash mod layer
