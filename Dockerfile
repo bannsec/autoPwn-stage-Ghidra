@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 # One layer for any lib updates
 RUN apt update && apt dist-upgrade -y && apt install -y wget unzip xauth libxtst6 libxi6 libxrender1 x11-apps openjdk-11-jdk
